@@ -11,9 +11,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;700;900&family=Open+Sans:wght@400;700&family=Roboto:wght@700;900&display=swap" rel="stylesheet">
-    <link href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
-</head>
-<body>
+    <link rel="stylesheet"
+    href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"></head>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+    
+    <body>
 
     <!-------------Navbar --------------->
 
@@ -33,7 +35,7 @@
                 <a class="nav-link" href="#Nuestrosproductos">Productos</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#Registro">Regístrese</a>
+                <a class="nav-link" href="#Registro">Clientes</a>
               </li>
               <button type="button" class="btn btn-danger">Contacto</button> 
             </ul>
@@ -64,7 +66,7 @@
          <h2 class="titulo-nos">Nosotros</h2>
          <div class="container">
           <div class="row justify-content-center ">
-            <div class="col-lg-5">
+            <div class="col-lg-5 ">
             <p class="parrafo-1 text-center"><strong>La Primera Seguros</strong> nació en Merlo, San Luis, en el año 1923 y ha logrado expandirse a todo el país como también a países vecinos como
                 Brasil, Uruguay y Chile. Buscamos proveer soluciones de protección, planificación personal y patrimonial, a través de
                 un equipo altamente capacitado e identificado con el Grupo, orientándonos a mejorar la calidad de vida de las personas, y
@@ -73,8 +75,8 @@
                 la sustentabilidad y la cooperación, e integrando la tecnología al servicio del ser humano.
             </p>
           </div>
-          <div class="col-lg-6">
-            <img src="Imagenes/grupo-personas-apilando-manos_23-2147656761.avif" class="img-presentacion" alt="">
+          <div class="col-lg-6 ">
+            <img src="Imagenes/grupo-personas-apilando-manos_23-2147656761.avif" class="img-presentacion" alt="imagen grupo de personas apilando manos">
           </div>
         </div>
         </div>
@@ -85,40 +87,41 @@
           <!--------------Cards------------>
           <section class="cards">
           <div class="container text-center">
-             <h4 class="titulo-sec text-center">Nuestros productos</h4>
+             <h4 class="titulo-sec text-center" id="Nuestrosproductos">Nuestros productos</h4>
           </div>
          
           <div class="container  mb-5">
             <div class="row justify-content-center">
               <div class="col-12  col-lg-3 mt-2">
                 <div class="card  card-border">
-                  <img src="Imagenes/car-solid (1).svg" class="card-img-top" alt="icono auto">
+                  <img src="https://img.icons8.com/cotton/64/null/car--v2.png" width="60" id="icono-auto"/>
                   <div class="card-body">
                     <h5 class="card-title text-center mt-1">AUTOS</h5>
                     <p class="card-text">Desde hace 100 años, brindamos una cobertura para cada tipo de necesidad. El mejor respaldo para tu auto está acá
                         con distintas coberturas y la mejor para vos.</p>
+                        <a class="btn btn-md btn-blue" href="">VER COBERTURAS</a>
                   </div>
                 </div>
               </div>
               <div class="col-12  col-lg-3 mt-2">
                 <div class="card card-border">
-                  <img src="Imagenes/house-solid (1).svg" class="card-img-top justify-content-center" alt="icono casa">
+                  <img src="https://img.icons8.com/cotton/64/null/home--v3.png" width="60" id="icono-casa"/>
                   <div class="card-body">
                     <h5 class="card-title text-center mt-1">CASAS</h5>
                     <p class="card-text">Ponemos a tu disposición una completa gama de coberturas para proteger tu casa o departamento, 
-                        el lugar donde buscas tranquilidad y seguridad.
-                        </p>
+                        el lugar donde buscas tranquilidad y seguridad.</p>
+                        <a class="btn btn-md btn-blue" href="">VER COBERTURAS</a>
                   </div>
                 </div>
               </div>
               <div class="col-12  col-lg-3 mt-2">
                 <div class="card card-border">
-                  <img src="Imagenes/motorcycle-solid (2).svg" class="card-img-top" alt="icono moto">
+                  <img src="https://img.icons8.com/cotton/64/null/scooter--v4.png" width="60" id="icono-moto"/>
                   <div class="card-body">
                      <h5 class="card-title text-center mt-1">MOTOS</h5>
-                    <p class="card-text">Si sos fanático de las motos y disfrutás de la libertad, 
-                        los paisajes y las nuevas culturas, pensamos en tus necesidades y 
+                    <p class="card-text">Si sos fanático de las motos y disfrutás de la libertad, los paisajes, pensamos en tus necesidades y 
                         diseñamos un producto para que puedas disfrutar de tu moto.</p>
+                        <a class="btn btn-md btn-blue" href="">VER COBERTURAS</a>
                   </div>
                 </div>
               </div>
@@ -128,8 +131,115 @@
 
    
 <!-----------------------------section 2------->
+<div class="cover2  ">
+    <div class="container  ">
+      <div class="row justify-content-end">
+        <div class="col-lg-4 ">
+          <h3 class="titulo-5">Clientes</h3>
+          <p class="parrafo-clientes">Todo lo que necesitás de tus seguros, a tu alcance. Consulta online de pólizas, denuncia de siniestros, actualización de datos y descarga de certificado de cobertura.
+        </p>
+           <a href="" class="btn btn-success mt-3 " id="Registro">Registrate</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="banner-final">
+    <div class="container ">
+      <div class="row justify-content-center">
+       <div class="col-lg-5 col-sm-6 col-md-8 ">
+        <h3 class="titulo-3 ">SIGUENOS EN NUESTRAS REDES</h3>  
+        </div>
+        <div class="col-lg-4"> 
+        <div class="redes-container mt-3 ">
+            <a href="https://twitter.com/?lang=es" class="twitter ms-2 "><i class="lab la-twitter la-2x"></i></a>
+            <a href="https://es-la.facebook.com/" class="facebook ms-2"><i class="lab la-facebook-f la-2x"></i></a>
+            <a href="https://ar.linkedin.com/company/website-pros" class="linkedin  ms-2 "><i class="lab la-linkedin-in la-2x"></i></a>
+            <a href="https://www.instagram.com/" class="instagram ms-2"> <i class="lab la-instagram la-2x "></i></a>
+       </div>   
+      </div>
+    </div>   
+   </div>   
+  </section>
 
 
+    <!--------------Form contacto------------>
+  <div class="form">
+    <div class="container">
+
+      <div class="content">
+        <div class="contact-wrapper animated bounceInUp">
+            <div class="contact-form">
+                <h3 class="titulo-contact" id="Contacto">Contáctenos</h3>
+                <form action="">
+                    <p>
+                        <label>Nombre</label>
+                        <input type="text" name="nombre">
+                    </p>
+                    <p>
+                        <label>Email</label>
+                        <input type="email" name="email">
+                    </p>
+                    <p>
+                        <label>N° de teléfono</label>
+                        <input type="tel" name="telefono">
+                    </p>
+                      <p class="block">
+                       <label>Message</label> 
+                        <textarea name="message" rows="3"></textarea>
+                    </p>
+                    <p class="block">
+                        <button>
+                            Enviar
+                        </button>
+                    </p>
+                </form>
+            </div>    
+        </div>
+
+    </div>
+
+       </div>
+  </div>
+
+       <!--------------Footer------------>
+  <section class="telefonos-footer justify-content-center">
+    <div class="container me-2 ">
+      <div class="row justify-content-center">
+       <div class="col-xs-12 col-lg-3 col-sm-4 col-md-4">
+        <div class="item"  style=" margin-bottom: 30px;">
+           <img src="https://img.icons8.com/ios-filled/50/null/phone.png"  width="40px"/>
+        <h6>ATENCIÓN AL <strong>CLIENTE</strong></h6>
+        <strong><a href="0800-123-4569">0800-123-4569</a></strong><br>
+        <a class="whatsapp-footer" href="https://wa.me/5492214290200"><i class="la la-whatsapp la-2x"></i><strong><span style="letter-spacing: 1px;">+5491234567890</strong></span></a>
+        </div>
+       </div>
+
+               
+      <div class="col-xs-12 col-lg-3 col-sm-4 col-md-4">
+        <div class="item">
+            <img src="https://img.icons8.com/ios/50/null/tow-truck.png" width="40px" />
+          <h6 class="Asistencia">Asistencia Mecánica</h6>
+          <p>
+            <strong><a href="0800-123-4555">0800-123-4555</a></strong><br>
+          </p>
+          </div>
+      </div>
+
+      <div class="col-xs-12 col-sm-3 col-lg-3 col-md-4">
+        <div class="item">
+            <img src="https://img.icons8.com/ios-filled/50/null/family--v1.png"  width="40px"/>
+          <h6 >Asistencia al <br> hogar</h6>
+          <p class="am2"><strong><a href="tel:0800-123-4599">0800-123-4599</a></strong></p>
+        </div>
+      </div>
+      </div>
+    </div>   
+ <div class="copyright"><small>© 2023 - Todos los derechos reservados-@La Primera -</small> 
+    </div>
+  </section>
+ 
+     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 </body>
 </html>
