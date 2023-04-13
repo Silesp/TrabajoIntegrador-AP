@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,67 +12,187 @@
     <link rel="stylesheet" href="estilos.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;700;900&family=Open+Sans:wght@400;700&family=Roboto:wght@700;900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;700;900&family=Open+Sans:wght@400;700&family=Roboto:wght@700;900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet"
-    href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"></head>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
-    <script src="script.js" ></script>
-    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-  <body>
+        href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+</head>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+<script src="script.js"></script>
+<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+<body>
+
+    <!-------------Navbar --------------->
+
+    <nav class="navbar navbar-expand-lg  pt-0 ">
+        <div class="container pt-0">
+            <a class="navbar-brand" href="#">
+                <img src="Imagenes/b9afc8a4-103d-47fb-bd65-6fe3aeae01a3.jpg" alt="Logo Admin" class="logo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Nosotros">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Nuestrosproductos">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Clientes">Clientes</a>
+                    </li>
+                    <button type="button" href="#contáctenos" class="btn btn-danger">Contacto</button>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!---------Form ------>
+
     <form action="#" class="form">
         <h1 class="text-center">Registrate</h1>
 
-    <div class="form-step active">
-        <div class="input-group">
-            <label for="nombre">Nombre</label>
-            <input type="text" name="nombre" id="nombre">
-        </div>
-        <div class="input-group">
-            <label for="apellido">Apellido</label>
-            <input type="text" name="apellido" id="apellido">
-        </div>
-        <div class="input-group">
-            <label for="nacimiento">Fecha de nacimiento</label>
-            <input type="text" name="nacimiento" id="campofecha">
-        </div>
-        <div class="input-group">
-            <label for="sexo">Sexo</label>
-            <input type="text" name="sexo" id="sexo">
+
+        <!---------Progress bar  -->
+
+        <div class="progressbar">
+            <div class="progress" id="progress"></div>
+
+            <div class="progress-step active" data-title="Nombre"></div>
+            <div class="progress-step" data-title="Datos"></div>
+            <div class="progress-step" data-title="Contraseña"></div>
+
         </div>
 
-        <div class="">
-            <a href="#" class="btn btn-siguiente">Siguiente</a>
-        </div>
-    </div>
+        <div class="form-step active">
+            <div class="input-group">
+                <label for="nombre">Nombre</label>
+                <input type="text" name="nombre" id="nombre">
+            </div>
+            <div class="input-group">
+                <label for="apellido">Apellido</label>
+                <input type="text" name="apellido" id="apellido">
+            </div>
+            <div class="input-group">
+                <label for="fechanac">Fecha de nacimiento</label>
+                <input type="date" name="fechanac" id="fechanac">
+            </div>
+            <div class="input-group">
 
-    <div class="form-step">
-        <div class="input-group">
-            <label for="nombre">Nombre</label>
-            <input type="text" name="nombre" id="nombre">
-        </div>
-        <div class="input-group">
-            <label for="apellido">Apellido</label>
-            <input type="text" name="apellido" id="apellido">
-        </div>
-        <div class="input-group">
-            <label for="nacimiento">Fecha de nacimiento</label>
-            <input type="text" name="nacimiento" id="campofecha">
-        </div>
-        <div class="input-group">
-            <label for="sexo">Sexo</label>
-            <input type="text" name="sexo" id="sexo">
+                <label for="sexo">Sexo
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected>Seleccione</option>
+                        <option value="1">Femenino</option>
+                        <option value="2">Masculino</option>
+                    </select></label>
+            </div>
+
+            <div class="">
+                <a href="#" class="btn btn-siguiente1">Siguiente</a>
+            </div>
         </div>
 
-        <div class="">
-            <a href="#" class="btn btn-siguiente">Siguiente</a>
+        <div class="form-step">
+            <div class="input-group">
+                <label for="pais">País</label>
+                <input type="text" name="pais" id="pais">
+            </div>
+            <div class="input-group">
+                <label for="provincia">Provincia</label>
+                <input type="text" name="provincia" id="provincia">
+            </div>
+            <div class="input-group">
+                <label for="ciudad">Ciudad</label>
+                <input type="text" name="ciudad" id="ciudad">
+            </div>
+            <div class="input-group">
+                <label for="telefono">Teléfono</label>
+                <input type="text" name="telefono " id="telefono">
+            </div>
+
+            <div class="buttons-group">
+                <a href="#" class="btn btn-anterior">Anterior</a>
+                <a href="#" class="btn btn-siguiente">Siguiente</a>
+            </div>
         </div>
 
-    </div>
+        <div class="form-step">
+            <div class="input-group">
+                <label for="id-usuario">Nombre de Usuario</label>
+                <input type="text" name="id-usuario" id="id-usuario">
+            </div>
+            <div class="input-group">
+                <label for="email">E-mail</label>
+                <input type="email" name="email" id="email">
+            </div>
+            <div class="input-group">
+                <label for="contraseña">Contraseña</label>
+                <input type="text" name="contraseña" id="contraseña">
+            </div>
+            <div class="input-group">
+                <label for="confirmContraseña">Confirme contraseña</label>
+                <input type="password" name="confirmContraseña " id="confirmContraseña">
+            </div>
 
-</form>
-     
-      
-  </body>
+            <div class="buttons-group">
+                <a href="#" class="btn btn-anterior">Anterior</a>
+                <input type="submit" class="btn" value="submit">
+            </div>
+        </div>
+
+    </form>
+
+    <!--------------Footer------------>
+    <section class="telefonos-footer justify-content-center">
+        <div class="container me-2 ">
+            <div class="row justify-content-center">
+                <div class="col-xs-12 col-lg-3 col-sm-4 col-md-4">
+                    <div class="item" style=" margin-bottom: 30px;">
+                        <img src="https://img.icons8.com/ios-filled/50/null/phone.png" width="40px" />
+                        <h6>ATENCIÓN AL <strong>CLIENTE</strong></h6>
+                        <strong><a href="0800-123-4569">0800-123-4569</a></strong><br>
+                        <a class="whatsapp-footer" href="https://wa.me/"><i
+                                class="la la-whatsapp la-2x"></i><strong><span
+                                    style="letter-spacing: 1px;">+5491234567890</strong></span></a>
+                    </div>
+                </div>
+
+
+                <div class="col-xs-12 col-lg-3 col-sm-4 col-md-4">
+                    <div class="item">
+                        <img src="https://img.icons8.com/ios/50/null/tow-truck.png" width="40px" />
+                        <h6 class="Asistencia">Asistencia Mecánica</h6>
+                        <p>
+                            <strong><a href="0800-123-4555">0800-123-4555</a></strong><br>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-sm-3 col-lg-3 col-md-4">
+                    <div class="item">
+                        <img src="https://img.icons8.com/ios-filled/50/null/family--v1.png" width="40px" />
+                        <h6>Asistencia al <br> hogar</h6>
+                        <p class="am2"><strong><a href="0800-123-4599">0800-123-4599</a></strong></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright"><small>© 2023 - Todos los derechos reservados-@La Primera -</small>
+        </div>
+    </section>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+</body>
+
 </html>

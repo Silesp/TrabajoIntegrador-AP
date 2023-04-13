@@ -1,26 +1,93 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;700;900&family=Open+Sans:wght@400;700&family=Roboto:wght@700;900&display=swap');
 
-
-
 *,
 *::after,
 *::before{
 margin: 0;
 padding: 0;
 box-sizing: border-box;
+
 } 
 
-body{
-    font-family: 'Nunito', sans-serif;
-    display: grid;
-    place-items: center;
-    min-height: 100vh;
-    background: linear-gradient(to right, #74ebd5, #acb6e5);
+/* <!-------------navbar ---------------> */
+.logo {
+    width: 180px;
+    height: 70px;
 }
+
+.navbar-nav {
+    display: contents;
+    }
+
+#navbarSupportedContent {
+
+    justify-content: end;
+}
+
+.nav-item {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    display: inline;
+    padding: 0px 6px;
+}
+
+.nav-link {
+    font-size: 15px;
+    color: #22193F;
+    margin-inline-end: 5px;
+}
+
+.nav-link:hover{
+    transition-duration: 0.4s;
+    color: rgba(190, 13, 13, 1);
+}
+
+.navbar .navbar-toggleer {
+    padding: 0.25rem 0.75rem;
+    font-size: 1.25rem;
+    background-color: transparent;
+    transition: box-shadow 0.15s ease-in-out;
+}
+
+.btn-danger {
+    background-color:rgba(190, 13, 13, 1);
+    border-color: rgba(190, 13, 13, 1);
+    border-radius: 85px;
+    border-bottom: rgba(190, 13, 13, 1);
+    font-size: 15px;
+    width: 80px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    color: white;
+    padding: 1px 3px;
+    justify-content: space-around;
+}
+
+.btn.btn-danger {
+    transition-duration: 0.4s;
+}
+
+.btn.btn-danger:hover {
+    background-color: rgba(0, 70, 127, 1);
+    border-color: rgba(0, 70, 127, 1);
+}
+
+.btn.btn-danger:focus {
+    background-color:rgba(0, 70, 127, 1);
+    border-color: rgba(0, 70, 127, 1);
+}
+
+.btn.btn-danger:active {
+    background-color: rgba(0, 70, 127, 1);
+    border-color:rgba(0, 70, 127, 1);
+}
+/* <!-------------form ---------------> */
 
 label{
     display: block;
-    margin-bottom: 0.5rem;
+    margin-bottom: 5px;
+    margin-top: 25px;
+    color: #0c0b0b;
  
 }
 
@@ -28,28 +95,108 @@ label{
     display: block;
     width: 100%;
     padding: 0.45rem;
+   
  }
 
 .text-center{
-    text-align: center;
-    color:  rgba(190, 13, 13, 1);
+    font-family:'Nunito Sans', sans-serif;
+    font-size: 28px;
+    color: rgba(190, 13, 13, 1);
+    font-weight: 900;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    margin-bottom: 0;
+    text-shadow: 1px 1px 3px black;
 }
+
+.progressbar{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    margin: 2 rem 0 4 rem 0;
+    counter-reset: step;
+}
+
+.progressbar::before, .progress{
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 4px;
+    width: 100%;
+    background-color: rgb(168, 166, 166);
+}
+
+.progress{
+    background-color: red;
+    width: 0;
+    transition: 0.3s ease-in-out;
+}
+
+.progress-step{
+    width: 35px;
+    height: 35px;
+    background-color: rgb(168, 166, 166);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+
+.progress-step::before{
+    counter-increment: step;
+    content: counter(step);
+}
+
+.progress-step::after{
+    content: attr(data-title);
+    position: absolute;
+    top: 38px;
+    font-size: 12px;
+    font-weight: 200;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(10, 9, 9);
+    
+}
+
+.progress-step.active{
+    background-color: #0054a0;
+    color: white;
+}
+
 .form{
     width: clamp(320px, 30%, 430px);
-    margin:  0 auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
     border: 1px solid #e7dbdb;
-    border-radius: .35rem;
-    background-color: #db7fcf;
-    box-shadow: 2px 4px 11px -1px #4d4848;
+    border-radius: 30px;
+    background-color: #74EBD5;
+    background-image: linear-gradient(90deg, #74EBD5 0%, #9FACE6 100%);
+    box-shadow: 2px 4px 11px -1px #0c0b0b;
+}
+
+.form-step{
+    display: none;
+}
+
+.form-step.active{
+    display: block;
 }
 
 .input-group{
     margin: 1rem 0;
+    
 }
 
+.buttons-group{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
 
 .btn{
-padding:  0.75rem;
+
 display: block;
 text-align: center;
 text-decoration: none;
@@ -57,9 +204,12 @@ background-color: rgba(190, 13, 13, 1);
 cursor: pointer;
 border-radius: 30px;
 color:white;
-width: 50%;
-margin-left: auto;
 transition: all 250ms ease-in-out;
+}
+
+.btn-siguiente1{
+    width: 50%;
+margin-left: auto;
 }
 .btn:active{
     transform: scale(.98);
@@ -74,3 +224,20 @@ transition: all 250ms ease-in-out;
 
 
 
+/* <!--------------Footer------------> */
+.telefonos-footer{
+    background-color: rgb(197, 196, 196);
+    color: fff;
+    padding: 30px 0px;
+    text-transform: uppercase;
+  }
+
+  .copyright{
+    padding-top: 15px;
+    text-align: center;
+   color: rgba(35, 120, 195, 1);
+    font-size: 12px;
+    
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+}
