@@ -402,3 +402,9 @@ color: grey;
     font-family: 'Nunito', sans-serif;
     font-weight: 400;
 }
+
+
+/* Contáctenos */
+textarea {
+    resize: none;
+}
