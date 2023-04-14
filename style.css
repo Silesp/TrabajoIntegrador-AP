@@ -304,17 +304,41 @@
     margin-top: 25px;
     display: flex;
     align-items: center;
-    padding-right: 5px;    
+    padding-right: 5px;
 }
 
-.redes-container{
-   margin-inline-end: 40px;
-      }
+.redes-container {
+    margin-top: 1.2rem;
+}
 
-.twitter  {
-     
-      color: black;
-      
+@media (max-device-width: 960px) {
+    .redes-container {
+        margin-left: 250px;
+        margin-right: 250px;
+        margin-bottom: 25px;
+    }
+}
+
+@media (max-device-width: 770px) {
+    .redes-container {
+        margin-left: 150px;
+        margin-right: 150px;
+        margin-bottom: 25px;
+    }
+}
+
+@media (max-device-width: 460px) {
+    .redes-container {
+        margin-left: 80px;
+        margin-right: 80px;
+        margin-bottom: 25px;
+    }
+}
+
+.twitter {
+
+    color: black;
+
 }
 
 .facebook {
@@ -411,10 +435,4 @@ textarea {
 
     font-family: 'Nunito', sans-serif;
     font-weight: 400;
-}
-
-
-/* Contáctenos */
-textarea {
-    resize: none;
 }
