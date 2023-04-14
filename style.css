@@ -288,6 +288,7 @@
     font-weight: 600;
     color: #fff;
     text-align: center;
+    text-shadow: 1px 1px 2px black
 }
 
 .banner-final {
@@ -303,41 +304,17 @@
     margin-top: 25px;
     display: flex;
     align-items: center;
-    padding-right: 5px;
+    padding-right: 5px;    
 }
 
-.redes-container {
-    margin-top: 1.2rem;
-}
+.redes-container{
+   margin-inline-end: 40px;
+      }
 
-@media (max-device-width: 960px) {
-    .redes-container {
-        margin-left: 250px;
-        margin-right: 250px;
-        margin-bottom: 25px;
-    }
-}
-
-@media (max-device-width: 770px) {
-    .redes-container {
-        margin-left: 150px;
-        margin-right: 150px;
-        margin-bottom: 25px;
-    }
-}
-
-@media (max-device-width: 460px) {
-    .redes-container {
-        margin-left: 80px;
-        margin-right: 80px;
-        margin-bottom: 25px;
-    }
-}
-
-.twitter {
-
-    color: black;
-
+.twitter  {
+     
+      color: black;
+      
 }
 
 .facebook {
@@ -421,7 +398,7 @@ textarea {
 /* <!--------------Footer------------> */
 .telefonos-footer {
     background-color: rgb(197, 196, 196);
-    color: #fff;
+    color: fff;
     padding: 30px 0px;
     text-transform: uppercase;
 }
@@ -434,4 +411,10 @@ textarea {
 
     font-family: 'Nunito', sans-serif;
     font-weight: 400;
+}
+
+
+/* Contáctenos */
+textarea {
+    resize: none;
 }
