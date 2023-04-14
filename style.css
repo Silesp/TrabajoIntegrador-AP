@@ -409,3 +409,17 @@ padding-bottom: 10px;
 textarea {
     resize: none;
 }
+
+#mensaje-enviado {
+    position: absolute;
+    left: 38%; 
+    background-color: greenyellow;
+    height: 60px;
+    width: 350px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 60px;
+    font-size: 18px;
+    border-radius: 20px;
+    display: none;
+}
