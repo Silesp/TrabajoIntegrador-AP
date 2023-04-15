@@ -4,7 +4,6 @@ $(document).ready( function() {
     let ciudad = $("#ciudad");
 
     function validarCamposNombre() {
-        /* Nombre y Apellido */
         let nombre = $("#nombre").val()
         let apellido = $("#apellido").val()
         
@@ -17,7 +16,6 @@ $(document).ready( function() {
             }
         }
 
-        /* Fecha de nacimiento */
         let fechaNacimiento = new Date($("#fechanac").val());
         let añoNacimiento = fechaNacimiento.getFullYear()
         let fechaActual = new Date();
@@ -27,7 +25,6 @@ $(document).ready( function() {
             return false
         }
 
-        /* Sexo */
         let sexo = $("#sexo").val();
         if(sexo == "Seleccione") {
             return false
