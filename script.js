@@ -19,8 +19,7 @@ $(document).ready( function() {
             console.log(respuesta.message);
             $("#enviar").text("Enviar")
             $("#formulario").trigger("reset");
-            $("#enviar").show();
-            $("#mensaje-enviado").css("display", "inline")
+            $("#mensaje-enviado").show();
             setTimeout(() => {
                 $("#mensaje-enviado").hide();
             }, 2000);
