@@ -14,7 +14,7 @@
 
 .navbar-nav {
     display: contents;
-    }
+}
 
 #navbarSupportedContent {
 
@@ -34,7 +34,7 @@
     margin-inline-end: 5px;
 }
 
-.nav-link:hover{
+.nav-link:hover {
     transition-duration: 0.4s;
     color: rgba(190, 13, 13, 1);
 }
@@ -47,7 +47,7 @@
 }
 
 .btn-danger {
-    background-color:rgba(190, 13, 13, 1);
+    background-color: rgba(190, 13, 13, 1);
     border-color: rgba(190, 13, 13, 1);
     border-radius: 85px;
     border-bottom: rgba(190, 13, 13, 1);
@@ -70,13 +70,13 @@
 }
 
 .btn.btn-danger:focus {
-    background-color:rgba(0, 70, 127, 1);
+    background-color: rgba(0, 70, 127, 1);
     border-color: rgba(0, 70, 127, 1);
 }
 
 .btn.btn-danger:active {
     background-color: rgba(0, 70, 127, 1);
-    border-color:rgba(0, 70, 127, 1);
+    border-color: rgba(0, 70, 127, 1);
 }
 
 /* <!-------------Header ---------------> */
@@ -136,11 +136,11 @@
 
 .btn.btn-success:active {
     background-color: rgba(0, 70, 127, 1);
-    border-color:rgba(0, 70, 127, 1);
+    border-color: rgba(0, 70, 127, 1);
 }
 
 .titulo-nos {
-    font-family:'Nunito Sans', sans-serif;
+    font-family: 'Nunito Sans', sans-serif;
     font-size: 28px;
     color: rgba(35, 120, 195, 1);
     font-weight: 900;
@@ -164,7 +164,7 @@
     margin-bottom: 25px;
 }
 
-.img-presentacion{
+.img-presentacion {
     width: 360px;
     border-radius: 20px;
     opacity: 0.9;
@@ -216,11 +216,12 @@
     font-family: 'Nunito Sans', sans-serif;
 }
 
-#icono-auto{
+#icono-auto {
     margin-left: auto;
     margin-right: auto;
 }
-.btn-blue{
+
+.btn-blue {
     display: flex;
     color: #ffffff;
     justify-content: center;
@@ -235,25 +236,25 @@
     margin-right: auto;
     margin-top: 0px;
     font-size: 13px;
-    font-family:  'Nunito', sans-serif;
+    font-family: 'Nunito', sans-serif;
     font-weight: 700;
 }
 
-.btn-blue:hover{
+.btn-blue:hover {
     color: #fff;
     background-color: rgba(0, 70, 127, 1);
     border-radius: 20px;
     border-color: rgba(0, 70, 127, 1);
     text-decoration: none;
     border: #0054a0 1px solid;
-   }
+}
 
-#icono-moto{
+#icono-moto {
     margin-left: auto;
     margin-right: auto;
 }
 
-#icono-casa{
+#icono-casa {
     margin-left: auto;
     margin-right: auto;
 }
@@ -281,7 +282,7 @@
     text-shadow: 1px 2px 2px black;
 }
 
-.parrafo-clientes{
+.parrafo-clientes {
     font-size: 14px;
     font-family: 'Open Sans', sans-serif;
     font-weight: 600;
@@ -300,59 +301,57 @@
     font-size: 23px;
     font-family: 'Nunito Sans', sans-serif;
     font-weight: 700;
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
-    padding-right: 5px;    
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+    padding-right: 5px;
 }
 
-.redes-container{
-
+.redes-container {
     margin-top: 1.2rem;
+}
 
-    }
-    @media (max-device-width: 960px) {
-        .redes-container{
-        margin-left:250px;
+@media (max-device-width: 960px) {
+    .redes-container {
+        margin-left: 250px;
         margin-right: 250px;
         margin-bottom: 25px;
-        }
     }
+}
 
-    @media (max-device-width: 770px) {
-        .redes-container{
-        margin-left:150px;
+@media (max-device-width: 770px) {
+    .redes-container {
+        margin-left: 150px;
         margin-right: 150px;
         margin-bottom: 25px;
-        }
     }
+}
 
-    @media (max-device-width: 460px) {
-        .redes-container{
-        margin-left:80px;
+@media (max-device-width: 460px) {
+    .redes-container {
+        margin-left: 80px;
         margin-right: 80px;
         margin-bottom: 25px;
-        }
     }
-
-
-
-.twitter  {
-     
-      color: black;
-      
 }
-  
+
+.twitter {
+
+    color: black;
+
+}
+
 .facebook {
-      color: black;
-  }
+    color: black;
+}
 
 .linkedin {
-      color: black;
-  }
-
-  .instagram{
     color: black;
-  }
+}
+
+.instagram {
+    color: black;
+}
 
 /* <!--------------Form Contacto------------> */
 
@@ -361,26 +360,26 @@
     margin-left: auto;
     margin-right: auto;
     padding: 1.5em;
-  
+
 }
 
-.titulo-contact{
-display: flex;
-justify-content: center;
-margin-top: 25px;
-font-family:'Nunito Sans', sans-serif;
-font-size: 28px;
-color: rgba(190, 13, 13, 1);
-font-weight: 900;
-padding-bottom: 10px;
-text-shadow: 1px 1px 3px black;
+.titulo-contact {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 28px;
+    color: rgba(190, 13, 13, 1);
+    font-weight: 900;
+    padding-bottom: 10px;
+    text-shadow: 1px 1px 3px black;
 }
 
-label{
-font-family: 'Roboto', sans-serif;
-font-size: 14px;
-font-weight: 200;
-color: grey;
+label {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 200;
+    color: grey;
 }
 
 .contact-form form button,
@@ -392,12 +391,12 @@ color: grey;
     background: none;
     outline: 0;
     color: black;
-    border-bottom: 1px solid    rgba(190, 13, 13, 1);
-   
+    border-bottom: 1px solid rgba(190, 13, 13, 1);
+
 }
 
 .contact-form form button {
-    background:  rgba(190, 13, 13, 1);
+    background: rgba(190, 13, 13, 1);
     border: 0;
     color: #fff;
     padding: 1em;
@@ -414,29 +413,29 @@ color: grey;
     outline: 0;
 }
 
-/* <!--------------Footer------------> */
-  .telefonos-footer{
-    background-color: rgb(197, 196, 196);
-    padding: 30px 0px;
-    text-transform: uppercase;
-  }
-
-  .copyright{
-    padding-top: 15px;
-    text-align: center;
-   color: rgba(35, 120, 195, 1);
-    font-size: 12px;
-    
-    font-family: 'Nunito', sans-serif;
-    font-weight: 400;
-}
-
-
-
 /* Contáctenos */
 textarea {
     resize: none;
 }
+
+
+/* <!--------------Footer------------> */
+.telefonos-footer {
+    background-color: rgb(197, 196, 196);
+    color: fff;
+    padding: 30px 0px;
+    text-transform: uppercase;
+}
+
+.copyright {
+    padding-top: 15px;
+    text-align: center;
+    color: rgba(35, 120, 195, 1);
+    font-size: 12px;
+
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+
 
 #mensaje-enviado,
 #registro-enviado {
@@ -457,4 +456,5 @@ textarea {
 .mensaje-error {
     color: red;
     display: none;
+
 }
