@@ -1,4 +1,4 @@
-$( document ).ready( function() {
+$(document).ready( function() {
     $("#formulario").submit(function(e) {
         e.preventDefault();
 

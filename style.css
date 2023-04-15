@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;700;900&family=Open+Sans:wght@400;700&family=Roboto:wght@700;900&display=swap');
 
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
 }
 
 .logo {
@@ -19,7 +19,6 @@
 #navbarSupportedContent {
 
     justify-content: end;
-   
 }
 
 .nav-item {
@@ -30,10 +29,14 @@
 }
 
 .nav-link {
-    font-size: 14px;
+    font-size: 15px;
     color: #22193F;
     margin-inline-end: 5px;
+}
 
+.nav-link:hover{
+    transition-duration: 0.4s;
+    color: rgba(190, 13, 13, 1);
 }
 
 .navbar .navbar-toggleer {
@@ -44,19 +47,17 @@
 }
 
 .btn-danger {
-
     background-color:rgba(190, 13, 13, 1);
     border-color: rgba(190, 13, 13, 1);
     border-radius: 85px;
     border-bottom: rgba(190, 13, 13, 1);
-    font-size: 16px;
+    font-size: 15px;
     width: 80px;
     font-family: 'Nunito', sans-serif;
     font-weight: 700;
     color: white;
     padding: 1px 3px;
     justify-content: space-around;
-
 }
 
 .btn.btn-danger {
@@ -95,7 +96,7 @@
 
 .titulo-banner-principal {
     font-size: 40px;
-    font-family: 'Roboto', sans-serif;;
+    font-family: 'Roboto', sans-serif;
     font-weight: 700;
     color: white;
     text-shadow: 1px 1px 5px black;
@@ -107,14 +108,12 @@
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     text-shadow: 1px 1px 2px black;
-    
 }
 
 .btn.btn-success {
     background-color: rgba(190, 13, 13, 1);
     border-color: rgba(190, 13, 13, 1);
     border-radius: 45px;
-
     font-size: 16px;
     font-family: 'Nunito Sans', sans-serif;
     font-weight: 700;
@@ -141,13 +140,14 @@
 }
 
 .titulo-nos {
-    font-family:'Roboto', sans-serif;;
+    font-family:'Nunito Sans', sans-serif;
     font-size: 28px;
-    color: rgba(190, 13, 13, 1);
+    color: rgba(35, 120, 195, 1);
     font-weight: 900;
     padding-top: 30px;
-    padding-bottom: 25px;
+    padding-bottom: 20px;
     margin-bottom: 0;
+    text-shadow: 1px 1px 2px black;
 }
 
 .parrafo-1 {
@@ -156,35 +156,36 @@
     font-weight: 400;
     color: #22193F;
     margin-bottom: 30px;
- 
-   
+    margin-left: 50px;
 }
 
 .presentacion {
     background-color: #e8e8e8;
     margin-bottom: 25px;
-    
 }
 
 .img-presentacion{
-    width: 400px;
+    width: 360px;
     border-radius: 20px;
     opacity: 0.9;
     padding-left: 0;
     padding-right: 0;
-    margin-bottom: 30px;
     margin-bottom: 50px;
     margin-right: 100px;
-    
+    margin-top: 45px;
 }
 
 /* <!--------------Cards------------> */
 
-.titulo-sec{
-    font-family:'Open Sans', sans-serif;
-    font-weight: 100;
-    color: #22193F;
-    text-shadow: 1px 1px 3px black;
+.titulo-sec {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 28px;
+    letter-spacing: 1px;
+    color: rgba(35, 120, 195, 1);
+    padding-bottom: 20px;
+    font-weight: 900;
+    margin-top: 30px;
+    text-shadow: 1px 1px 2px black;
 
 }
 
@@ -223,28 +224,29 @@
     display: flex;
     color: #ffffff;
     justify-content: center;
-    background: #0054a0;
-    padding: 8px 12px;
+    background: rgba(190, 13, 13, 1);
+    padding: 6px 10px;
     text-align: center;
     touch-action: manipulation;
     border: 1px solid transparent;
-    border-radius: 0;
-    border-radius: 10px;
+    border-radius: 20px;
     width: 150px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 0px;
-    font-size: 14px;
-
+    font-size: 13px;
+    font-family:  'Nunito', sans-serif;
+    font-weight: 700;
 }
+
 .btn-blue:hover{
-    color: #0054a0;
-    background-color: #fff;
-    border-color: #fff;
+    color: #fff;
+    background-color: rgba(0, 70, 127, 1);
+    border-radius: 20px;
+    border-color: rgba(0, 70, 127, 1);
     text-decoration: none;
     border: #0054a0 1px solid;
-    border-radius: 10px;
-}
+   }
 
 #icono-moto{
     margin-left: auto;
@@ -257,47 +259,40 @@
 }
 
 
-.titulo-sec {
-    font-family: 'Nunito Sans', sans-serif;
-    font-size: 28px;
-    color: rgba(190, 13, 13, 1);
-    padding-bottom: 20px;
-    font-weight: 900;
-    margin-top: 30px;
-}
-
 .cover2 {
     background-image: url(Imagenes/glenn-carstens-peters-npxXWgQ33ZQ-unsplash.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    background-attachment: fixed;
     width: 100%;
     min-height: 50vh;
     display: flex;
     align-items: center;
     text-align: center;
     vertical-align: middle;
-
 }
 
 .titulo-5 {
-    color: rgba(190, 13, 13, 1);
-    font-size: 22px;
+    color: rgba(35, 120, 195, 1);
+    font-size: 28px;
+    letter-spacing: 1px;
     font-weight: 900;
     font-family: 'Nunito Sans', sans-serif;
+    text-shadow: 1px 2px 2px black;
 }
 
-.parrafo-cliente{
+.parrafo-clientes{
     font-size: 14px;
     font-family: 'Open Sans', sans-serif;
-    font-weight: 400;
-    color: rgba(190, 13, 13, 1);
-    margin-bottom: 50px;
+    font-weight: 600;
+    color: #fff;
     text-align: center;
+    text-shadow: 1px 1px 2px black
 }
 
 .banner-final {
     background-color: rgba(35, 120, 195, 1);
-    height: 80px;
+    height: auto;
 }
 
 .titulo-3 {
@@ -305,15 +300,41 @@
     font-size: 23px;
     font-family: 'Nunito Sans', sans-serif;
     font-weight: 700;
-    margin-top: 25px;
-    display: flex;
-    align-items: center;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
     padding-right: 5px;    
 }
 
 .redes-container{
-   margin-inline-end: 40px;
-      }
+
+    margin-top: 1.2rem;
+
+    }
+    @media (max-device-width: 960px) {
+        .redes-container{
+        margin-left:250px;
+        margin-right: 250px;
+        margin-bottom: 25px;
+        }
+    }
+
+    @media (max-device-width: 770px) {
+        .redes-container{
+        margin-left:150px;
+        margin-right: 150px;
+        margin-bottom: 25px;
+        }
+    }
+
+    @media (max-device-width: 460px) {
+        .redes-container{
+        margin-left:80px;
+        margin-right: 80px;
+        margin-bottom: 25px;
+        }
+    }
+
+
 
 .twitter  {
      
@@ -336,21 +357,30 @@
 /* <!--------------Form Contacto------------> */
 
 .form {
-    max-width: 600px;
+    max-width: 500px;
     margin-left: auto;
     margin-right: auto;
     padding: 1.5em;
+  
 }
 
 .titulo-contact{
 display: flex;
 justify-content: center;
 margin-top: 25px;
-font-family:'Roboto', sans-serif;;
+font-family:'Nunito Sans', sans-serif;
 font-size: 28px;
 color: rgba(190, 13, 13, 1);
 font-weight: 900;
 padding-bottom: 10px;
+text-shadow: 1px 1px 3px black;
+}
+
+label{
+font-family: 'Roboto', sans-serif;
+font-size: 14px;
+font-weight: 200;
+color: grey;
 }
 
 .contact-form form button,
@@ -361,8 +391,9 @@ padding-bottom: 10px;
     border: none;
     background: none;
     outline: 0;
-    color: fff;
+    color: black;
     border-bottom: 1px solid    rgba(190, 13, 13, 1);
+   
 }
 
 .contact-form form button {
@@ -383,13 +414,9 @@ padding-bottom: 10px;
     outline: 0;
 }
 
-
-
-
-  /* <!--------------Footer------------> */
+/* <!--------------Footer------------> */
   .telefonos-footer{
     background-color: rgb(197, 196, 196);
-    color: fff;
     padding: 30px 0px;
     text-transform: uppercase;
   }
@@ -399,10 +426,11 @@ padding-bottom: 10px;
     text-align: center;
    color: rgba(35, 120, 195, 1);
     font-size: 12px;
-    opacity: 0.9;
+    
     font-family: 'Nunito', sans-serif;
-    font-weight: 200;
+    font-weight: 400;
 }
+
 
 
 /* Contáctenos */
@@ -410,7 +438,8 @@ textarea {
     resize: none;
 }
 
-#mensaje-enviado {
+#mensaje-enviado,
+#registro-enviado {
     position: absolute;
     left: 38%; 
     background-color: greenyellow;
@@ -421,5 +450,11 @@ textarea {
     line-height: 60px;
     font-size: 18px;
     border-radius: 20px;
+    display: none;
+    z-index: 5;
+}
+
+.mensaje-error {
+    color: red;
     display: none;
 }
