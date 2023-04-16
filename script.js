@@ -24,7 +24,5 @@ $(document).ready( function() {
                 $("#mensaje-enviado").hide();
             }, 2000);
         })
-        
     });
 })
-
