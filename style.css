@@ -436,3 +436,24 @@ textarea {
     font-family: 'Nunito', sans-serif;
     font-weight: 400;
 }
+
+#mensaje-enviado,
+#registro-enviado {
+    position: absolute;
+    left: 38%; 
+    background-color: greenyellow;
+    height: 60px;
+    width: 350px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 60px;
+    font-size: 18px;
+    border-radius: 20px;
+    display: none;
+    z-index: 5;
+}
+
+.mensaje-error {
+    color: red;
+    display: none;
+}
