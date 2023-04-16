@@ -141,7 +141,7 @@ $(document).ready( function() {
         paso ++;
     }
 
-    $(".btn-siguiente1").on("click", function(e) {
+    $(".btn-siguiente").on("click", function(e) {
         switch (paso){
             case 0:
                 if(validarCamposNombre()) {

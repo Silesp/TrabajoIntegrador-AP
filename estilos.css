@@ -261,9 +261,8 @@ margin-left: auto;
   .copyright{
     padding-top: 15px;
     text-align: center;
-   color: rgba(35, 120, 195, 1);
+    color: rgba(35, 120, 195, 1);
     font-size: 12px;
-    
     font-family: 'Nunito', sans-serif;
     font-weight: 400;
 }
