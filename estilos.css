@@ -81,6 +81,8 @@ box-sizing: border-box;
     background-color: rgba(0, 70, 127, 1);
     border-color:rgba(0, 70, 127, 1);
 }
+
+
 /* <!-------------form ---------------> */
 
 label{
@@ -88,15 +90,27 @@ label{
     margin-bottom: 5px;
     margin-top: 25px;
     color: #0c0b0b;
- 
+    width: 100%;
+   
 }
 
  input {
     display: block;
     width: 100%;
-    padding: 0.45rem;
-   
+    padding: 0.35rem;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
  }
+
+ .form-select{
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: #0c0b0b;
+    border-color: black;
+}
+ 
 
 .text-center{
     font-family:'Nunito Sans', sans-serif;
@@ -105,7 +119,7 @@ label{
     font-weight: 900;
     padding-top: 30px;
     padding-bottom: 20px;
-    margin-bottom: 0;
+    margin-bottom: 10px;
     text-shadow: 1px 1px 3px black;
 }
 
@@ -124,7 +138,7 @@ label{
     transform: translateY(-50%);
     height: 4px;
     width: 100%;
-    background-color: rgb(168, 166, 166);
+    background-color: rgb(166, 167, 168);
 }
 
 .progress{
@@ -142,6 +156,9 @@ label{
     justify-content: center;
     align-items: center;
     z-index: 2;
+    font-family: 'Opens sans', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
 }
 
 .progress-step::before{
@@ -154,8 +171,8 @@ label{
     position: absolute;
     top: 38px;
     font-size: 12px;
-    font-weight: 200;
-    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-family: 'Opens sans', sans-serif;
     color: rgb(10, 9, 9);
     
 }
@@ -186,8 +203,18 @@ label{
 
 .input-group{
     margin: 1rem 0;
-    
 }
+
+/*.form-select{
+    color: black;
+    display: block;
+    width: 100%;
+    font-size: 12px;
+    font-weight: 200;
+    font-family: 'Roboto', sans-serif;
+    display: block;
+    margin-bottom: 5px;
+}*/
 
 .buttons-group{
     display: grid;
@@ -211,6 +238,7 @@ transition: all 250ms ease-in-out;
     width: 50%;
 margin-left: auto;
 }
+
 .btn:active{
     transform: scale(.98);
 }
@@ -220,8 +248,6 @@ margin-left: auto;
     border-color: rgba(0, 70, 127, 1);
     color: white;
 }
-
-
 
 
 /* <!--------------Footer------------> */
@@ -240,4 +266,26 @@ margin-left: auto;
     
     font-family: 'Nunito', sans-serif;
     font-weight: 400;
+}
+
+
+#mensaje-enviado,
+#registro-enviado {
+    position: absolute;
+    left: 38%; 
+    background-color: greenyellow;
+    height: 60px;
+    width: 350px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 60px;
+    font-size: 18px;
+    border-radius: 20px;
+    display: none;
+    z-index: 5;
+}
+
+.mensaje-error {
+    color: red;
+    display: none;
 }
