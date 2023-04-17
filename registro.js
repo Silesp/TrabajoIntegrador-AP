@@ -177,6 +177,7 @@ $(document).ready( function() {
     })
 
     function mostrarResumen() {
+        /* RESUMEN */
         let nombre = $("#nombre").val()
         let apellido = $("#apellido").val()
         let fechaNacimiento = new Date($("#fechanac").val());
@@ -187,11 +188,7 @@ $(document).ready( function() {
         let ciudad = $("#ciudad").find("option:selected").data("name");
         let nombreUsuario = $("#id-usuario").val();
         let email = $("#email").val();
-        let contraseña = $("#contraseña").val();
-        
-        console.log(nombre, apellido, fechaLocal, sexo);
-        console.log(telefono, provincia, ciudad)
-        console.log(nombreUsuario, email, contraseña);        
+        let contraseña = $("#contraseña").val();        
 
     }
 
@@ -206,3 +203,4 @@ $(document).ready( function() {
         paso --;
     })
 })
+

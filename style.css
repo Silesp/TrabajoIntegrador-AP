@@ -261,7 +261,7 @@
 
 
 .cover2 {
-    background-image: url(Imagenes/glenn-carstens-peters-npxXWgQ33ZQ-unsplash.jpg);
+    background-image: url(Imagenes/foto-notebook.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -283,9 +283,9 @@
 }
 
 .parrafo-clientes {
-    font-size: 14px;
+    font-size: 18px;
     font-family: 'Open Sans', sans-serif;
-    font-weight: 600;
+    font-weight: 400;
     color: #fff;
     text-align: center;
     text-shadow: 1px 1px 2px black
@@ -335,22 +335,10 @@
     }
 }
 
-.twitter {
+.iconos-instagram, .iconos-linkedin, 
+.iconos-twitter, .iconos-facebook{
+    margin-left: 8px;
 
-    color: black;
-
-}
-
-.facebook {
-    color: black;
-}
-
-.linkedin {
-    color: black;
-}
-
-.instagram {
-    color: black;
 }
 
 /* <!--------------Form Contacto------------> */
