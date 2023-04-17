@@ -7,21 +7,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registrate</title>
     <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
-    <script src="registro.js"></script>
+     <script src="./registro.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="estilos.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;700;900&family=Open+Sans:wght@400;700&family=Roboto:wght@700;900&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet"
-        href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
-</head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;700;900&family=Open+Sans:wght@400;700&family=Roboto:wght@700;900&display=swap">
+    <link rel="stylesheet"  href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
 <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+</head>
 <body>
 
     <!-------------Navbar --------------->
@@ -38,26 +38,25 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="#Nosotros">Nosotros</a>
+                        <a class="nav-link" href="index.html#Nosotros">Nosotros</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#Nuestrosproductos">Productos</a>
+                        <a class="nav-link" href="index.html#Nuestrosproductos">Productos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#Clientes">Clientes</a>
+                        <a class="nav-link" href="index.html#Clientes">Clientes</a>
                     </li>
-                    <button type="button" href="#contáctenos" class="btn btn-danger">Contacto</button>
+                    <a href="index.html#Contáctenos" class="btn btn-danger">Contacto</a>
                 </ul>
             </div>
         </div>
     </nav>
 
-
     <!---------Form ------>
 
     <form action="#" class="form">
         <h1 class="text-center">Registrate</h1>
-        
+
 
         <!---------Progress bar  -->
 
@@ -67,8 +66,8 @@
             <div class="progress-step active" data-title="Nombre"></div>
             <div class="progress-step" data-title="Datos"></div>
             <div class="progress-step" data-title="Contraseña"></div>
-
         </div>
+
         <div>
             <span id="registro-enviado">Su solicitud de registro se envió con éxito!</span>
         </div>
@@ -87,8 +86,8 @@
                 <label for="fechanac">Fecha de nacimiento</label>
                 <input type="date" name="fechanac" id="fechanac" title="Debes ser mayor de edad">
             </div>
-            <div class="input-group">
 
+            <div class="input-group">
                 <label for="sexo">Sexo
                     <select class="form-select" aria-label="Default select example" id="sexo" title="Elige una opción">
                         <option selected>Seleccione</option>
@@ -110,18 +109,21 @@
                 <label for="provincia">Provincia</label>
                 <select class="form-select" type="text" name="provincia" id="provincia">
                 </select>
+            
             </div>
             <div class="input-group">
                 <label for="ciudad">Ciudad</label>
                 <select class="form-select" type="text" name="ciudad" id="ciudad">
                     <option>Elige una Ciudad</option>
-                </select>                    
+                </select>
             </div>
             <div class="input-group">
                 <label for="telefono">Teléfono</label>
-                <input type="text" name="telefono" id="telefono" title="El número solo puede componerse de números">
+                <input type="text" name="telefono " id="telefono" title="El número sólo puede componerse de números">
             </div>
             <span class="mensaje-error">(*)Revise los datos ingresados</span>
+
+
             <div class="buttons-group">
                 <a href="#" class="btn btn-anterior">Anterior</a>
                 <a href="#" class="btn btn-siguiente  mr-auto">Siguiente</a>
@@ -139,7 +141,7 @@
             </div>
             <div class="input-group">
                 <label for="contraseña">Contraseña</label>
-                <input type="password" name="contraseña" id="contraseña" title="La contraseña debe tener entre 6 y 16 caracteres, al menos 1 letra y 1 número.">
+                <input type="text" name="contraseña" id="contraseña" title="La contraseña debe tener entre 6 y 16 caracteres, al menos 1 letra y 1 número.">
             </div>
             <div class="input-group">
                 <label for="confirmContraseña">Confirme contraseña</label>
@@ -150,7 +152,7 @@
                 <a href="#" class="btn btn-anterior">Anterior</a>
                 <input type="button" class="btn btn-siguiente" value="Confirmar" id="confirmar">
             </div>
-        </div>
+            </div>
 
     </form>
 
@@ -192,7 +194,6 @@
         <div class="copyright"><small>© 2023 - Todos los derechos reservados-@La Primera -</small>
         </div>
     </section>
-
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
