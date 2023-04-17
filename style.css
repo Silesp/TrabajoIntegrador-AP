@@ -141,13 +141,13 @@
 
 .titulo-nos {
     font-family: 'Nunito Sans', sans-serif;
-    font-size: 28px;
+    font-size: 30px;
     color: rgba(35, 120, 195, 1);
     font-weight: 900;
     padding-top: 30px;
     padding-bottom: 20px;
     margin-bottom: 0;
-    text-shadow: 1px 1px 2px black;
+    text-shadow: 1px 2px 2px black;
 }
 
 .parrafo-1 {
@@ -172,20 +172,20 @@
     padding-right: 0;
     margin-bottom: 50px;
     margin-right: 100px;
-    margin-top: 45px;
+    margin-top: 20px;
 }
 
 /* <!--------------Cards------------> */
 
 .titulo-sec {
     font-family: 'Nunito Sans', sans-serif;
-    font-size: 28px;
+    font-size: 30px;
     letter-spacing: 1px;
     color: rgba(35, 120, 195, 1);
     padding-bottom: 20px;
     font-weight: 900;
     margin-top: 30px;
-    text-shadow: 1px 1px 2px black;
+    text-shadow: 1px 2px 2px black;
 
 }
 
@@ -274,8 +274,8 @@
 }
 
 .titulo-5 {
-    color: rgba(35, 120, 195, 1);
-    font-size: 28px;
+    color: rgb(35, 120, 195, 1);
+    font-size: 30px;
     letter-spacing: 1px;
     font-weight: 900;
     font-family: 'Nunito Sans', sans-serif;
@@ -291,6 +291,7 @@
     text-shadow: 1px 1px 2px black
 }
 
+
 .banner-final {
     background-color: rgba(35, 120, 195, 1);
     height: auto;
@@ -301,14 +302,18 @@
     font-size: 23px;
     font-family: 'Nunito Sans', sans-serif;
     font-weight: 700;
-    margin-top: 25px;
+    margin-top: 20px;
     display: flex;
     align-items: center;
     padding-right: 5px;
 }
 
-.redes-container {
-    margin-top: 1.2rem;
+@media (max-device-width: 1400px) {
+    .card-body {
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-bottom: 25px;
+    }
 }
 
 @media (max-device-width: 960px) {
@@ -339,6 +344,10 @@
 .iconos-twitter, .iconos-facebook{
     margin-left: 8px;
 
+}
+.redes-container {
+    display: inline-flex;
+    gap: 20px;
 }
 
 /* <!--------------Form Contacto------------> */
@@ -445,4 +454,18 @@ textarea {
 .mensaje-error {
     color: red;
     display: none;
+}
+@media screen and (max-device-width: 575px) {
+    #footer {
+        margin-left: 140px;
+        margin-right: 140px;
+        margin-bottom: 15px;
+    }
+}
+@media screen and (max-device-width: 390px) {
+    #footer {
+        margin-left: 100px;
+        margin-right: 100px;
+        margin-bottom: 15px;
+    }
 }
