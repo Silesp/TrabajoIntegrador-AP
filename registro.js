@@ -4,8 +4,8 @@ $(document).ready( function() {
     let ciudad = $("#ciudad");
 
     function validarCamposNombre() {
-        let nombre = $("#nombre").val()
-        let apellido = $("#apellido").val()
+        let nombre = $("#nombre").val();
+        let apellido = $("#apellido").val();
         
         if(nombre === "" || apellido === "") {            
             return false
@@ -18,6 +18,7 @@ $(document).ready( function() {
 
         let fechaNacimiento = new Date($("#fechanac").val());
         let añoNacimiento = fechaNacimiento.getFullYear()
+        
         let fechaActual = new Date();
         let añoActual = fechaActual.getFullYear();
 
@@ -38,7 +39,7 @@ $(document).ready( function() {
             url: "https://apis.datos.gob.ar/georef/api/provincias"
         }).done(function(json) {
             let opciones = `<option value="">Elige una Provincia</option>`;
-            json.provincias.forEach(el => opciones += `<option value="${el.id}">${el.nombre}</option>`);
+            json.provincias.forEach(el => opciones += `<option value="${el.id}" data-name="${el.nombre}">${el.nombre}</option>`);
             provincia.html(opciones);
         })
     
@@ -57,12 +58,12 @@ $(document).ready( function() {
                     url:`https://apis.datos.gob.ar/georef/api/departamentos?provincia=${provincia}&max=200`                
                 }).done(function(json) {
                     let opciones = `<option value="">Elige una Ciudad</option>`;
-                    json.departamentos.forEach(el => opciones += `<option value="${el.id}">${el.nombre}</option>`);
+                    json.departamentos.forEach(el => opciones += `<option value="${el.id}" data-name="${el.nombre}">${el.nombre}</option>`);
                     ciudad.html(opciones);
                 })                            
             } else {                    
                 let opciones = `<option value="">Elige una Ciudad</option>`;
-                json.municipios.forEach(el => opciones += `<option value="${el.id}">${el.nombre}</option>`);
+                json.municipios.forEach(el => opciones += `<option value="${el.id}" data-name="${el.nombre}">${el.nombre}</option>`);
                 ciudad.html(opciones);
             }
         })
@@ -76,7 +77,7 @@ $(document).ready( function() {
         }
 
         let telefono = $("#telefono").val()
-
+        
         if(telefono === "") {            
             return false
         } else {
@@ -94,7 +95,7 @@ $(document).ready( function() {
         let nombreUsuario = $("#id-usuario").val();
         let email = $("#email").val();
         let contraseña = $("#contraseña").val();
-        let confirmacion = $("#confirmContraseña").val() ;   
+        let confirmacion = $("#confirmContraseña").val();   
         
         if(nombreUsuario === "") {
             return false
@@ -162,16 +163,34 @@ $(document).ready( function() {
             case 2 :
                 if(validarCamposPass()) {
                     console.log("FORMULARIO ENVIADO!");
+                    mostrarResumen()
                     $(".mensaje-error").hide();
                     $("#registro-enviado").show();
                     setTimeout(() => {
                         $("#registro-enviado").hide();
                     }, 2000);
+
                 } else {
                     $(".mensaje-error").show();
                 }
         }    
     })
+
+    function mostrarResumen() {
+        /* RESUMEN */
+        let nombre = $("#nombre").val()
+        let apellido = $("#apellido").val()
+        let fechaNacimiento = new Date($("#fechanac").val());
+        let fechaLocal = new Date(fechaNacimiento.getUTCFullYear(), fechaNacimiento.getUTCMonth(), fechaNacimiento.getUTCDate());
+        let sexo = $("#sexo").val();        
+        let telefono = $("#telefono").val();
+        let provincia = $("#provincia").find("option:selected").data("name");
+        let ciudad = $("#ciudad").find("option:selected").data("name");
+        let nombreUsuario = $("#id-usuario").val();
+        let email = $("#email").val();
+        let contraseña = $("#contraseña").val();        
+
+    }
 
     $(".btn-anterior").on("click", function() {
         let pasoActual = $(this).closest(".form-step");
