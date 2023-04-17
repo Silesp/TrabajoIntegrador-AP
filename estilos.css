@@ -284,11 +284,18 @@ margin-left: auto;
     padding-top: 15px;
     text-align: center;
     color: rgba(35, 120, 195, 1);
+    background-color: #22193F;
     font-size: 12px;
     font-family: 'Nunito', sans-serif;
     font-weight: 400;
 }
 
+h6 {
+    text-align: center;
+}
+.whatsapp-footer {
+    text-align: center;
+}
 
 #mensaje-enviado,
 #registro-enviado {

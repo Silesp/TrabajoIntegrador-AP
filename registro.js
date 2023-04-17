@@ -190,6 +190,8 @@ $(document).ready( function() {
         let email = $("#email").val();
         let contraseña = $("#contraseña").val();        
 
+        alert("Los datos ingresados son: Nombre: " + nombre + ', Apellido: '  + apellido + ', Fecha de nacimiento: ' + fechaLocal + ', Sexo: ' + sexo + ', Teléfono: ' + telefono + ', Provincia: '+ provincia + ', Ciudad: ' + ciudad + ', Nombre de usuario: ' + nombreUsuario + ', Email: ' + email + ', Contraseña: ' + contraseña);
+            
     }
 
     $(".btn-anterior").on("click", function() {

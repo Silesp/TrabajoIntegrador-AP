@@ -194,8 +194,8 @@
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     color: #22193F;
-    margin-bottom: 50px;
     text-align: center;
+    height: 130px;
 }
 
 .card {
@@ -302,7 +302,7 @@
     font-size: 23px;
     font-family: 'Nunito Sans', sans-serif;
     font-weight: 700;
-    margin-top: 20px;
+    margin: 20px;
     display: flex;
     align-items: center;
     padding-right: 5px;
@@ -429,7 +429,7 @@ textarea {
     text-align: center;
     color: rgba(35, 120, 195, 1);
     font-size: 12px;
-
+    background-color: #22193F;
     font-family: 'Nunito', sans-serif;
     font-weight: 400;
 }
@@ -468,4 +468,37 @@ textarea {
         margin-right: 100px;
         margin-bottom: 15px;
     }
+}
+
+/* Boton Fijo */
+.boton-fijo {
+    position: fixed;
+    bottom: 16px;
+    right: 16px;
+    background-color: transparent;
+    z-index: 2000;
+}
+
+.boton-enlace {
+    background-color: transparent;
+}
+
+.boton-enlace a {
+    font-size: 36px;
+    padding: 10px 10px;
+    display: inline-block;
+    color: #ffffff;
+    border: 2px solid transparent;
+    border-radius: 50%;
+    background-color: #43d854;
+    text-decoration: none;
+    transition: all 0.5s;
+}
+
+.boton-enlace a:hover {
+    box-shadow: 5px 5px 5px rgba(255, 255, 255, 0.5);
+}
+
+h6 {
+    text-align: center;
 }
